@@ -181,7 +181,7 @@ class GsonUtil {
 
 ````JAVA
 Gson gson = new Gson();
-		Person person = gson.fromJson(res, Person.class);
+Person person = gson.fromJson(res, Person.class);
 ````
 
 - 对于ListString与String类型之间转化的问题,直接使用return value.get(0)即可,value为<List>String类型.
@@ -254,7 +254,7 @@ jb.addActionListener(this);
 
 实现初始化窗口时,出现在屏幕中央的位置
 ````JAVA
-    Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
+  Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
 		int width = (int)screensize.getWidth();
 		int height = (int)screensize.getHeight();
 		setLocation((width-300)/2,(height-200)/2);
